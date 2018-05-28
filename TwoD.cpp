@@ -102,18 +102,18 @@ bool isInside(Point2D p, Point2D polygon[], int n) {
 		}
 		i = next;
 	} while (i != 0);
-	return count & 1; //bitwise test, true if counter is odd
+	return count & 1;
 }
 
 
 
 int main()
 {
-	//Question 1 Demo, prints out distance between two points
+	//prints out distance between two points
 	Point2D a = { 2,2 }, b = { 7,7 }, c = { 6,6 };
 	cout << "Distance between a and b is " << a.dist(b) << endl;
 
-	//Question 2 Demo, input a random array of 2D point objects, output an array of objects sorted from origin
+	//input a random array of 2D point objects, output an array of objects sorted from origin
 	const int length = 100;
 	Point2D points[length];
 	//An Array of randomly generated 2D points as input
@@ -131,10 +131,10 @@ int main()
 	}
 	cout << endl;
 
-	//Question 3 determine the orientation of line segments connected by points abc
+	//determine the orientation of line segments connected by points abc
 	cout << endl << "Determine orientation of ab, bc; 0 for colinear, 1 for ACW, -1 for CW: " << endl << a.orientation(a, b, c) << endl;
 
-	//Question 4 testing:  over lapping colinear case, non over lapping colinear case, 
+	//over lapping colinear case, non over lapping colinear case, 
 	//non-colinear intersecting and non colinear non intersecting cases
 	cout << endl << "Question 4, two segments intersection" << endl << "Testing cases:" << endl;
 	Point2D a1 = { 1,1 }, a2 = { 5,5 }, b1 = { 4,4 }, b2 = { 6,6 };
@@ -162,7 +162,7 @@ int main()
 	cout << "non Over lapping non colinear case: " << val << endl;
 	cout << endl;
 
-	//Question 5, checking whether a point is within a polygon
+	//checking whether a point is within a polygon
 	Point2D point = { 1,3 };
 	Point2D weird[] = { {0,0}, { 2,0 }, { 2,2 }, { 10,10 }, {4,6},{2,10} };
 	int n = sizeof(weird) / sizeof(weird[0]);
