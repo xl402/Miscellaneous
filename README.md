@@ -1,7 +1,7 @@
 # Miscellaneous
 Contains all the unimportant side projects done for fun
 ## TwoD
-A 2D class demonstration with methods that achieves:
+A 2D class demonstration with methods that achieve:
 * Eucledian sort
 * Segment orientation
 * Occlusion detection (point inside or outside polygon)
