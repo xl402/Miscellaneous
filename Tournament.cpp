@@ -22,7 +22,7 @@ public:
 };
 
 /*
-This function handles Questions 1 and 3, input: vector of teams(vector of players), output: order of tournaments
+input: vector of teams(vector of players), output: order of tournaments
 provided in vectour of rounds, each round is a vector of PlayerVSPlayers
 The whole algorithm is based upon the Round-Robin Tournament algorithm found on Wikipedia
 https://en.wikipedia.org/wiki/Round-robin_tournament
